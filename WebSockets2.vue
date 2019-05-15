@@ -51,15 +51,15 @@ export default {
       this.websocket && this.websocket.send(user_input);
     },
 
-    onWsOpen(event) {
+    onWsOpen() {
       this.addMessage('CONNECTED', 'SYS')
     },
 
-    onWsClose(event) {
+    onWsClose() {
       this.addMessage('DISCONNECTED', 'SYS')
     },
 
-    onWsError(event) {
+    onWsError() {
       this.addMessage('ERROR', 'ERR')
     },
   }
